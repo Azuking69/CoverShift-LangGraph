@@ -117,8 +117,8 @@ def start_shift_process(req: StartRequest):
     state_snapshot = shift_graph.get_state(config)
     
     return {
-        "status": "PAUSED_FOR_APPROVAL",
-        "thread_id": thread_id,
+        "status": "PAUSED_FOR_APPROVAL", # PAUSED_FOR_APPROVAL (一時停止)
+        "thread_id": thread_id, # セッションキー（store-101-session）によって、誰のどのプロセスの状態かを保持
         "current_status": current_state.get("status"),
         "draft_shift": current_state.get("draft_shift"),
         "next_step": state_snapshot.next, # 次に実行される予定のノード
@@ -144,7 +144,7 @@ def resume_shift_process(req: ResumeRequest):
     final_state = shift_graph.invoke(Command(resume=req.approved), config)
 
     return {
-        "status": "COMPLETED",
+        "status": "COMPLETED", # 中断された場所から再開して最終ステータス S6_確定済み まで一気通貫で到達
         "thread_id": req.thread_id,
         "final_status": final_state.get("status"),
         "manager_approved": final_state.get("manager_approved"),
