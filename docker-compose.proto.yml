@@ -1,0 +1,13 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: covershift
+      POSTGRES_PASSWORD: covershift
+      POSTGRES_DB: covershift_proto
+    ports:
+      - "5434:5432"
+    volumes:
+      - proto_pgdata:/var/lib/postgresql/data
+volumes:
+  proto_pgdata:
