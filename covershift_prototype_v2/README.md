@@ -17,7 +17,9 @@
 ```
  ブラウザ/curl ──HTTP──▶ API(main.py) ──SQL──▶ PostgreSQL ◀──SQL── ワーカー(worker.py)
                           受付だけ              runs / jobs          LangGraphを動かす
-                                                 + checkpoint        (ソルバー・LLM・LINEもここ)
+                                                 + checkp
+
+                                                 oint        (ソルバー・LLM・LINEもここ)
 ```
 
 ## 動かし方(Windows / PowerShell)
