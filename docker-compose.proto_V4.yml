@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:16
+    container_name: covershift_db_v4
+    environment:
+      POSTGRES_USER: covershift
+      POSTGRES_PASSWORD: covershift
+      POSTGRES_DB: covershift_proto
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata_v4:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    container_name: covershift_redis_v4
+    ports:
+      - "6379:6379"
+
+volumes:
+  pgdata_v4:
