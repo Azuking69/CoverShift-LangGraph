@@ -1,8 +1,8 @@
 [WORKER] ワーカー起動。未処理ジョブのチェック中...
 📡 [LISTEN開始/再接続]
-[WORKER] ジョブ検知・処理開始: Job ID=124, Kind=start, Thread=e5c-1791458185-0-2026-10
-[WORKER] ジョブ完了: Job ID=124
-[WORKER] ジョブ検知・処理開始: Job ID=125, Kind=start, Thread=e5c-1791458185-1-2026-10
-[WORKER] ジョブ完了: Job ID=125
-[WORKER] ジョブ検知・処理開始: Job ID=126, Kind=start, Thread=e5c-1791458185-2-2026-10
-[WORKER] ジョブ完了: Job ID=126
+[WORKER] ジョブ検知・処理開始: Job ID=131, Kind=start, Thread=e5c-1791458934-0-2026-10
+[WORKER] ジョブ完了: Job ID=131
+[WORKER] ジョブ検知・処理開始: Job ID=132, Kind=start, Thread=e5c-1791458934-1-2026-10
+[WORKER] ジョブ完了: Job ID=132
+[WORKER] ジョブ検知・処理開始: Job ID=133, Kind=start, Thread=e5c-1791458934-2-2026-10
+[WORKER] ジョブ完了: Job ID=133
