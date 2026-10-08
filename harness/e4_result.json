@@ -1,0 +1,15 @@
+{
+  "pairs": 10,
+  "double_start": {
+    "[202, 409]": 10
+  },
+  "paused_before_resume": 8,
+  "double_resume": {
+    "[202, 409]": 10
+  },
+  "runs_rows": 10,
+  "max_resume_jobs_per_thread": 1,
+  "final_status": {
+    "COMPLETED": 10
+  }
+}

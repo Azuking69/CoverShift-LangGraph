@@ -1,0 +1,24 @@
+ 
+ -------------- celery@아즈짱 v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Windows-11-10.0.26200-SP0 2026-10-08 21:46:36
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         covershift_v4:0x241e3914ad0
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 12 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.process_shift_job
+  . tasks.resume_shift_job
+
+[2026-10-08 21:46:37,084: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-08 21:46:37,121: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-08 21:46:38,201: INFO/MainProcess] mingle: all alone
+[2026-10-08 21:46:38,267: INFO/MainProcess] celery@아즈짱 ready.

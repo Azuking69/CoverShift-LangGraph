@@ -1,0 +1,182 @@
+ 
+ -------------- celery@아즈짱 v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Windows-11-10.0.26200-SP0 2026-10-08 21:45:58
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         covershift_v4:0x23630514ad0
+- ** ---------- .> transport:   redis://localhost:6379/0
+- ** ---------- .> results:     redis://localhost:6379/0
+- *** --- * --- .> concurrency: 12 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . tasks.process_shift_job
+  . tasks.resume_shift_job
+
+[2026-10-08 21:45:58,274: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-08 21:45:58,296: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-08 21:45:59,408: INFO/MainProcess] mingle: all alone
+[2026-10-08 21:45:59,532: INFO/MainProcess] celery@아즈짱 ready.
+[2026-10-08 21:46:05,137: INFO/MainProcess] Task tasks.process_shift_job[d369db24-9d37-4582-a456-86dcdca52fd4] received
+[2026-10-08 21:46:05,138: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=d369db24-9d37-4582-a456-86dcdca52fd4, Thread ID=bpre
+[2026-10-08 21:46:05,150: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bpre)
+[2026-10-08 21:46:05,215: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
+[2026-10-08 21:46:05,233: INFO/MainProcess] Task tasks.process_shift_job[d369db24-9d37-4582-a456-86dcdca52fd4] succeeded in 0.09537349999300204s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bpre', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'Alice': [...], 'Bob': [...], 'Charlie': [...], 'David': [...]}, 'assigned_total': 14}}
+[2026-10-08 21:46:05,752: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\retry.py", line 120, in call_with_retry
+    return do()
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1308, in <lambda>
+    lambda: command(*args, **kwargs),
+            ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1395, in try_read
+    return conn.read_response(
+           ~~~~~~~~~~~~~~~~~~^
+        disconnect_on_error=False, push_request=True, timeout=read_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1407, in read_response
+    response = self._parser.read_response(
+        disable_decoding=disable_decoding,
+        push_request=push_request,
+        timeout=timeout,
+    )
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\resp3.py", line 40, in read_response
+    result = self._read_response(
+        disable_decoding=disable_decoding,
+        push_request=push_request,
+        timeout=timeout,
+    )
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\resp3.py", line 65, in _read_response
+    raw = self._buffer.readline(timeout=timeout)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\socket.py", line 117, in readline
+    self._read_from_socket(timeout=timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\socket.py", line 67, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\consumer\consumer.py", line 346, in start
+    blueprint.start(self)
+    ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\bootsteps.py", line 116, in start
+    step.start(parent)
+    ~~~~~~~~~~^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\consumer\consumer.py", line 788, in start
+    c.loop(*c.loop_args())
+    ~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\loops.py", line 168, in synloop
+    _loop_cycle()
+    ~~~~~~~~~~~^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\loops.py", line 157, in _loop_cycle
+    connection.drain_events(timeout=2.0)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\connection.py", line 343, in drain_events
+    return self.transport.drain_events(self.connection, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\virtual\base.py", line 997, in drain_events
+    get(self._deliver, timeout=timeout)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\redis.py", line 601, in get
+    ret = self.handle_event(fileno, event)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\redis.py", line 583, in handle_event
+    return self.on_readable(fileno), self
+           ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\redis.py", line 579, in on_readable
+    chan.handlers[type]()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\redis.py", line 931, in _receive
+    ret.append(self._receive_one(c))
+               ~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\kombu\transport\redis.py", line 941, in _receive_one
+    response = c.parse_response()
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1399, in parse_response
+    response = self._execute(conn, try_read)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1307, in _execute
+    response = conn.retry.call_with_retry(
+        lambda: command(*args, **kwargs),
+        failure_callback,
+        with_failure_count=True,
+    )
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\retry.py", line 127, in call_with_retry
+    fail(error, failures)
+    ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1304, in failure_callback
+    self._reconnect(conn, error, failure_count, start_time, command_name)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\client.py", line 1278, in _reconnect
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1028, in connect
+    self.retry.call_with_retry(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda: self.connect_check_health(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        lambda error: self.disconnect(error),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\retry.py", line 132, in call_with_retry
+    raise error
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\retry.py", line 120, in call_with_retry
+    return do()
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1029, in <lambda>
+    lambda: self.connect_check_health(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        check_health=True, retry_socket_connect=False
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ),
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1083, in connect_check_health
+    self.on_connect_check_health(check_health=check_health)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1186, in on_connect_check_health
+    self.handshake_metadata = self.read_response()
+                              ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\connection.py", line 1407, in read_response
+    response = self._parser.read_response(
+        disable_decoding=disable_decoding,
+        push_request=push_request,
+        timeout=timeout,
+    )
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\resp3.py", line 40, in read_response
+    result = self._read_response(
+        disable_decoding=disable_decoding,
+        push_request=push_request,
+        timeout=timeout,
+    )
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\resp3.py", line 65, in _read_response
+    raw = self._buffer.readline(timeout=timeout)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\socket.py", line 117, in readline
+    self._read_from_socket(timeout=timeout)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\socket.py", line 67, in _read_from_socket
+    raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
+redis.exceptions.ConnectionError: Connection closed by server.
+[2026-10-08 21:46:10,179: WARNING/MainProcess] C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\consumer\consumer.py:397: CPendingDeprecationWarning: 
+In Celery 5.1 we introduced an optional breaking change which
+on connection loss cancels all currently executed tasks with late acknowledgement enabled.
+These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
+back to the queue. You can enable this behavior using the worker_cancel_long_running_tasks_on_connection_loss
+setting. In Celery 5.1 it is set to False by default. The setting will be set to True by default in Celery 6.0.
+
+  warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
+
+[2026-10-08 21:46:28,594: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-08 21:46:28,617: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-08 21:46:29,699: INFO/MainProcess] mingle: all alone
+[2026-10-08 21:46:29,804: INFO/MainProcess] Task tasks.process_shift_job[9d5085f6-cfff-4f23-a45a-8ceabd739f26] received
+[2026-10-08 21:46:29,805: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=9d5085f6-cfff-4f23-a45a-8ceabd739f26, Thread ID=bafter1791463588
+[2026-10-08 21:46:29,810: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bafter1791463588)
+[2026-10-08 21:46:29,833: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
+[2026-10-08 21:46:29,870: INFO/MainProcess] Task tasks.process_shift_job[9d5085f6-cfff-4f23-a45a-8ceabd739f26] succeeded in 0.06499910001002718s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bafter1791463588', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'Alice': [...], 'Bob': [...], 'Charlie': [...], 'David': [...]}, 'assigned_total': 14}}

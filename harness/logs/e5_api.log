@@ -1,0 +1,122 @@
+INFO:     Started server process [29048]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8094 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64228 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64301 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64304 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64309 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64313 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64351 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64355 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64363 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64368 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64404 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64407 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64413 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64416 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64421 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58255 - "POST /api/v1/shift/start HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 422, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\applications.py", line 1215, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\applications.py", line 96, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\telemetry\_asgi.py", line 151, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\middleware\exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\routing.py", line 676, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 2786, in app
+    await route.handle(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 1310, in handle
+    await super().handle(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\routing.py", line 282, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 165, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 151, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 727, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\routing.py", line 362, in run_endpoint_function
+    return await run_in_threadpool(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+        _run_sync_endpoint, function=dependant.call, arguments=values
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\starlette\concurrency.py", line 34, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        func, args, abandon_on_cancel=abandon_on_cancel, limiter=limiter
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
+    return function(**arguments)
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\main.py", line 17, in start_shift
+    thread_id = db.create_run(req.store_id, req.period)
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\db.py", line 67, in create_run
+    with get_db_connection() as conn:
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\db.py", line 13, in get_db_connection
+    return psycopg.connect(DATABASE_URL, row_factory=dict_row, connect_timeout=5)  # type: ignore  # 【改善】DBが止まっても5秒で諦める
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\psycopg\connection.py", line 134, in connect
+    raise new_ex.with_traceback(None)
+psycopg.errors.ConnectionTimeout: connection timeout expired
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5434', hostaddr: '::1': connection timeout expired
+- host: 'localhost', port: '5434', hostaddr: '127.0.0.1': connection timeout expired
+INFO:     127.0.0.1:63598 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63601 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63607 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63610 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63614 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63616 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63619 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63621 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:61099 - "GET /api/v1/shift/e5c-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61101 - "GET /api/v1/shift/e5c-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61103 - "GET /api/v1/shift/e5c-1791462466-2-2026-10 HTTP/1.1" 200 OK

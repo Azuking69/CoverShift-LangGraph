@@ -1,0 +1,22 @@
+{
+  "db": "covershift_v2cmp",
+  "n_requested": 50,
+  "client_based": {
+    "n": 50,
+    "min_ms": 137,
+    "median_ms": 518,
+    "p95_ms": 1003,
+    "max_ms": 1141,
+    "mean_ms": 576,
+    "missing": 0
+  },
+  "db_clock_only": {
+    "n": 50,
+    "min_ms": 91,
+    "median_ms": 467,
+    "p95_ms": 950,
+    "max_ms": 1085,
+    "mean_ms": 532
+  },
+  "clock_offset_ms": -2.8
+}

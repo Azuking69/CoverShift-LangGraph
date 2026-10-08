@@ -1,0 +1,29 @@
+[WORKER] ワーカー起動(V6: LangGraph + PostgresSaver)。未処理ジョブのチェック中...
+📡 [LISTEN開始/再接続]
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 236
+[WORKER] ジョブ検知・処理開始: Job ID=236, Kind=start, Thread=e5a-1791462466-0-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=236
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 237
+[WORKER] ジョブ検知・処理開始: Job ID=237, Kind=start, Thread=e5a-1791462466-1-2026-10, 試行=1
+[WORKER] グラフ用のDB接続を作り直して、もう1回やります
+[WORKER] ジョブ完了: Job ID=237
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 238
+[WORKER] ジョブ検知・処理開始: Job ID=238, Kind=start, Thread=e5a-1791462466-2-2026-10, 試行=1
+[WORKER] グラフ用のDB接続を作り直して、もう1回やります
+[WORKER] ジョブ完了: Job ID=238
+[WORKER] LISTEN接続失敗(再試行): ConnectionRefusedError
+[WORKER] DBエラー(次の周期に再試行): ConnectionTimeout
+[WORKER] LISTEN接続失敗(再試行): ConnectionRefusedError
+[WORKER] DBエラー(次の周期に再試行): ConnectionTimeout
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 239
+[WORKER] ジョブ検知・処理開始: Job ID=239, Kind=start, Thread=e5b-1791462466-after-2026-10, 試行=1
+[WORKER] グラフ用のDB接続を作り直して、もう1回やります
+[WORKER] ジョブ完了: Job ID=239

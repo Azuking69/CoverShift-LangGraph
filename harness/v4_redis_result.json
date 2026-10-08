@@ -1,0 +1,46 @@
+{
+  "A": {
+    "A1_安全な停止(stop→start)": {
+      "queue_before": 3,
+      "queue_after": 3,
+      "redis_back_sec": 0.1
+    },
+    "A2_突然死(kill→start)": {
+      "queue_before": 3,
+      "queue_after": 0,
+      "redis_back_sec": 0.0
+    },
+    "A3_作り直し(rm→up)": {
+      "queue_before": 3,
+      "queue_after": 0,
+      "redis_back_sec": 0.0
+    },
+    "A4_AOF+volume(kill→start)": {
+      "queue_before": 3,
+      "queue_after": 3,
+      "redis_back_sec": 0.0
+    }
+  },
+  "B": {
+    "post_during_outage": {
+      "http": 500,
+      "sec": 18.2,
+      "task_id": null
+    },
+    "redis_back_sec": 0.0,
+    "post_accepted_after": {
+      "http": 202,
+      "sec": 0.1,
+      "task_id": "9d5085f6-cfff-4f23-a45a-8ceabd739f26"
+    },
+    "task_done_after_restore_sec": 1.4,
+    "sec_from_restore_to_task_done": 2.7,
+    "worker_alive": true,
+    "log_has_connection_lost": true
+  },
+  "C": {
+    "redis_commands_60s": 92,
+    "connections_opened_60s": 0,
+    "note": "測定用の接続自身の分(INFO 1回・接続1本)を引いた"
+  }
+}
