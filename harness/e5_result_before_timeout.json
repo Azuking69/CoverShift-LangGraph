@@ -1,0 +1,16 @@
+{
+  "A_latency_after_short_outage_sec": [
+    8.1,
+    0.4,
+    0.4
+  ],
+  "A_notify_lines": 2,
+  "B_post_during_down": {
+    "http": "ReadTimeout",
+    "sec": 40.0
+  },
+  "B_worker_alive_after_45s": true,
+  "B_latency_after_long_outage_sec": 53.9,
+  "B_worker_alive_end": true,
+  "C_queued_during_restart_processed_of_3": 3
+}

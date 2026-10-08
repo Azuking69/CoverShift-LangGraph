@@ -1,0 +1,5 @@
+[WORKER] ワーカー起動。未処理ジョブのチェック中...
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 2
+[WORKER] ジョブ検知・処理開始: Job ID=2, Kind=start, Thread=e3-1791455263-2026-10

@@ -1,0 +1,14 @@
+{
+  "jobs": 20,
+  "seconds_for_starts": 21.1,
+  "paused": 20,
+  "max_attempts": 1,
+  "jobs_per_worker": {
+    "e6_w1": 10,
+    "e6_w2": 10
+  },
+  "resume_http": {
+    "202": 20
+  },
+  "completed_after_resume": 20
+}

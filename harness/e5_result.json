@@ -1,0 +1,16 @@
+{
+  "A_latency_after_short_outage_sec": [
+    0.4,
+    0.4,
+    7.8
+  ],
+  "A_notify_lines": 2,
+  "B_post_during_down": {
+    "http": 500,
+    "sec": 10.1
+  },
+  "B_worker_alive_after_45s": true,
+  "B_latency_after_long_outage_sec": 0.4,
+  "B_worker_alive_end": true,
+  "C_queued_during_restart_processed_of_3": 3
+}

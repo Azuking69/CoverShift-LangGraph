@@ -1,0 +1,9 @@
+{
+  "window_sec": 60,
+  "db": "covershift_proto",
+  "seconds": 60.0,
+  "transactions": 15,
+  "connections_opened": 6,
+  "open_connections_at_start": 1,
+  "open_connections_at_end": 1
+}

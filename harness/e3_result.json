@@ -1,0 +1,17 @@
+{
+  "sleep_sec": "8",
+  "timeout_sec": "10",
+  "passed": true,
+  "thread_id": "e3-1791455263-2026-10",
+  "seconds_after_restart": 19.2,
+  "final_status": "PAUSED_FOR_APPROVAL",
+  "jobs": [
+    {
+      "id": 2,
+      "kind": "start",
+      "status": "done",
+      "attempts": 2
+    }
+  ],
+  "attempts": 2
+}
