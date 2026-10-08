@@ -1,6 +1,6 @@
 {
   "jobs": 20,
-  "seconds_for_starts": 21.1,
+  "seconds_for_starts": 24.7,
   "paused": 20,
   "max_attempts": 1,
   "jobs_per_worker": {

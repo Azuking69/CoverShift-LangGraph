@@ -1,82 +1,64 @@
-[WORKER] ワーカー起動。未処理ジョブのチェック中...
+[WORKER] ワーカー起動(V6: LangGraph + PostgresSaver)。未処理ジョブのチェック中...
 📡 [LISTEN開始/再接続]
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 53
-[WORKER] ジョブ検知・処理開始: Job ID=53, Kind=start, Thread=e4-1791456964-0-2026-10
-[WORKER] ジョブ完了: Job ID=53
-[WORKER] ジョブ検知・処理開始: Job ID=54, Kind=start, Thread=e4-1791456964-1-2026-10
-[WORKER] ジョブ完了: Job ID=54
-[WORKER] ジョブ検知・処理開始: Job ID=55, Kind=start, Thread=e4-1791456964-2-2026-10
-[WORKER] ジョブ完了: Job ID=55
-[WORKER] ジョブ検知・処理開始: Job ID=56, Kind=start, Thread=e4-1791456964-3-2026-10
-[WORKER] ジョブ完了: Job ID=56
-[WORKER] ジョブ検知・処理開始: Job ID=57, Kind=start, Thread=e4-1791456964-4-2026-10
-[WORKER] ジョブ完了: Job ID=57
-[WORKER] ジョブ検知・処理開始: Job ID=58, Kind=start, Thread=e4-1791456964-5-2026-10
-[WORKER] ジョブ完了: Job ID=58
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 176
+[WORKER] ジョブ検知・処理開始: Job ID=176, Kind=start, Thread=e4-1791462417-0-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=176
+[WORKER] ジョブ検知・処理開始: Job ID=177, Kind=start, Thread=e4-1791462417-1-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=177
+[WORKER] ジョブ検知・処理開始: Job ID=178, Kind=start, Thread=e4-1791462417-2-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=178
+[WORKER] ジョブ検知・処理開始: Job ID=179, Kind=start, Thread=e4-1791462417-3-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=179
+[WORKER] ジョブ検知・処理開始: Job ID=180, Kind=start, Thread=e4-1791462417-4-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=180
+[WORKER] ジョブ検知・処理開始: Job ID=181, Kind=start, Thread=e4-1791462417-5-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=181
+[WORKER] ジョブ検知・処理開始: Job ID=182, Kind=start, Thread=e4-1791462417-6-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=182
+[WORKER] ジョブ検知・処理開始: Job ID=183, Kind=start, Thread=e4-1791462417-7-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=183
+[WORKER] ジョブ検知・処理開始: Job ID=184, Kind=start, Thread=e4-1791462417-8-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=184
+[WORKER] ジョブ検知・処理開始: Job ID=185, Kind=start, Thread=e4-1791462417-9-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=185
+[WORKER] ジョブ検知・処理開始: Job ID=186, Kind=resume, Thread=e4-1791462417-0-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=186
+[WORKER] ジョブ検知・処理開始: Job ID=187, Kind=resume, Thread=e4-1791462417-1-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=187
+[WORKER] ジョブ検知・処理開始: Job ID=188, Kind=resume, Thread=e4-1791462417-2-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=188
+[WORKER] ジョブ検知・処理開始: Job ID=189, Kind=resume, Thread=e4-1791462417-3-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=189
+[WORKER] ジョブ検知・処理開始: Job ID=190, Kind=resume, Thread=e4-1791462417-4-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=190
+[WORKER] ジョブ検知・処理開始: Job ID=191, Kind=resume, Thread=e4-1791462417-5-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=191
+[WORKER] ジョブ検知・処理開始: Job ID=192, Kind=resume, Thread=e4-1791462417-6-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=192
+[WORKER] ジョブ検知・処理開始: Job ID=193, Kind=resume, Thread=e4-1791462417-7-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=193
+[WORKER] ジョブ検知・処理開始: Job ID=194, Kind=resume, Thread=e4-1791462417-8-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=194
+[WORKER] ジョブ検知・処理開始: Job ID=195, Kind=resume, Thread=e4-1791462417-9-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=195
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 54
-[WORKER] ジョブ検知・処理開始: Job ID=59, Kind=start, Thread=e4-1791456964-6-2026-10
-[WORKER] ジョブ完了: Job ID=59
-[WORKER] ジョブ検知・処理開始: Job ID=60, Kind=start, Thread=e4-1791456964-7-2026-10
-[WORKER] ジョブ完了: Job ID=60
-[WORKER] ジョブ検知・処理開始: Job ID=61, Kind=start, Thread=e4-1791456964-8-2026-10
-[WORKER] ジョブ完了: Job ID=61
-[WORKER] ジョブ検知・処理開始: Job ID=62, Kind=start, Thread=e4-1791456964-9-2026-10
-[WORKER] ジョブ完了: Job ID=62
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 177
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 55
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 178
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 56
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 179
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 57
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 180
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 58
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 181
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 59
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 182
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 60
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 183
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 61
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 184
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 62
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 185
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 63
-[WORKER] ジョブ検知・処理開始: Job ID=63, Kind=resume, Thread=e4-1791456964-0-2026-10
-[WORKER] ジョブ完了: Job ID=63
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 64
-[WORKER] ジョブ検知・処理開始: Job ID=64, Kind=resume, Thread=e4-1791456964-1-2026-10
-[WORKER] ジョブ完了: Job ID=64
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 65
-[WORKER] ジョブ検知・処理開始: Job ID=65, Kind=resume, Thread=e4-1791456964-2-2026-10
-[WORKER] ジョブ完了: Job ID=65
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 66
-[WORKER] ジョブ検知・処理開始: Job ID=66, Kind=resume, Thread=e4-1791456964-3-2026-10
-[WORKER] ジョブ完了: Job ID=66
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 67
-[WORKER] ジョブ検知・処理開始: Job ID=67, Kind=resume, Thread=e4-1791456964-4-2026-10
-[WORKER] ジョブ完了: Job ID=67
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 68
-[WORKER] ジョブ検知・処理開始: Job ID=68, Kind=resume, Thread=e4-1791456964-5-2026-10
-[WORKER] ジョブ完了: Job ID=68
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 69
-[WORKER] ジョブ検知・処理開始: Job ID=69, Kind=resume, Thread=e4-1791456964-6-2026-10
-[WORKER] ジョブ完了: Job ID=69
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 70
-[WORKER] ジョブ検知・処理開始: Job ID=70, Kind=resume, Thread=e4-1791456964-7-2026-10
-[WORKER] ジョブ完了: Job ID=70
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 71
-[WORKER] ジョブ検知・処理開始: Job ID=71, Kind=resume, Thread=e4-1791456964-8-2026-10
-[WORKER] ジョブ完了: Job ID=71
-
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 72
-[WORKER] ジョブ検知・処理開始: Job ID=72, Kind=resume, Thread=e4-1791456964-9-2026-10
-[WORKER] ジョブ完了: Job ID=72
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 186

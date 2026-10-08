@@ -1,0 +1,30 @@
+{
+  "running": {
+    "localhost": [
+      0.0,
+      "接続できた"
+    ],
+    "127.0.0.1": [
+      0.0,
+      "接続できた"
+    ],
+    "::1": [
+      0.0,
+      "接続できた"
+    ]
+  },
+  "stopped": {
+    "localhost": [
+      10.0,
+      "ConnectionTimeout"
+    ],
+    "127.0.0.1": [
+      5.0,
+      "ConnectionTimeout"
+    ],
+    "::1": [
+      5.0,
+      "ConnectionTimeout"
+    ]
+  }
+}

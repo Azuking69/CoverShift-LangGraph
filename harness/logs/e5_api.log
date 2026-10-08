@@ -1,43 +1,23 @@
-INFO:     Started server process [20596]
+INFO:     Started server process [29048]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8094 (Press CTRL+C to quit)
-INFO:     127.0.0.1:58874 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55396 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:55398 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55401 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55404 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55407 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55412 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55415 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55417 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55420 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55423 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55426 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55428 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55431 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55434 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55437 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55440 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55443 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55446 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55448 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55451 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55454 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55458 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55461 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55464 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55467 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55470 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:55475 - "GET /api/v1/shift/e5a-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51803 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:51805 - "GET /api/v1/shift/e5a-1791458934-1-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51811 - "GET /api/v1/shift/e5a-1791458934-1-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51848 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:51851 - "GET /api/v1/shift/e5a-1791458934-2-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51853 - "GET /api/v1/shift/e5a-1791458934-2-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:51859 - "GET /api/v1/shift/e5a-1791458934-2-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54525 - "POST /api/v1/shift/start HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64228 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64301 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64304 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64309 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64313 - "GET /api/v1/shift/e5a-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64351 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64355 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64360 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64363 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64368 - "GET /api/v1/shift/e5a-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64404 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:64407 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64413 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64416 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64421 - "GET /api/v1/shift/e5a-1791462466-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58255 - "POST /api/v1/shift/start HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
   File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 422, in run_asgi
@@ -115,13 +95,13 @@ Traceback (most recent call last):
     result = context.run(func, *args)
   File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\fastapi\telemetry\_api.py", line 240, in _run_sync_endpoint
     return function(**arguments)
-  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v5_notify\main.py", line 17, in start_shift
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\main.py", line 17, in start_shift
     thread_id = db.create_run(req.store_id, req.period)
-  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v5_notify\db.py", line 59, in create_run
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\db.py", line 67, in create_run
     with get_db_connection() as conn:
          ~~~~~~~~~~~~~~~~~^^
-  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v5_notify\db.py", line 9, in get_db_connection
-    return psycopg.connect(DATABASE_URL, row_factory=dict_row, connect_timeout=5)
+  File "C:\Users\User\Programming\LangGraph\covershift_prototype_v6_langgraph\db.py", line 13, in get_db_connection
+    return psycopg.connect(DATABASE_URL, row_factory=dict_row, connect_timeout=5)  # type: ignore  # 【改善】DBが止まっても5秒で諦める
            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\psycopg\connection.py", line 134, in connect
     raise new_ex.with_traceback(None)
@@ -129,12 +109,14 @@ psycopg.errors.ConnectionTimeout: connection timeout expired
 Multiple connection attempts failed. All failures were:
 - host: 'localhost', port: '5434', hostaddr: '::1': connection timeout expired
 - host: 'localhost', port: '5434', hostaddr: '127.0.0.1': connection timeout expired
-INFO:     127.0.0.1:54574 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:54577 - "GET /api/v1/shift/e5b-1791458934-after-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54581 - "GET /api/v1/shift/e5b-1791458934-after-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54583 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:54588 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:54590 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:54670 - "GET /api/v1/shift/e5c-1791458934-0-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54672 - "GET /api/v1/shift/e5c-1791458934-1-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:54674 - "GET /api/v1/shift/e5c-1791458934-2-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63598 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63601 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63607 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63610 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63614 - "GET /api/v1/shift/e5b-1791462466-after-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63616 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63619 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:63621 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:61099 - "GET /api/v1/shift/e5c-1791462466-0-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61101 - "GET /api/v1/shift/e5c-1791462466-1-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61103 - "GET /api/v1/shift/e5c-1791462466-2-2026-10 HTTP/1.1" 200 OK

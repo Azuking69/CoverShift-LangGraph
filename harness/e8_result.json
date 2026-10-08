@@ -1,0 +1,11 @@
+{
+  "start_http": 202,
+  "paused_sec": 0.7,
+  "double_resume_http": [
+    202,
+    409
+  ],
+  "completed_sec": 0.7,
+  "final_status": "COMPLETED",
+  "checkpoints_rows": 6
+}
