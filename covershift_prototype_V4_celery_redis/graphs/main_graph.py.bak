@@ -4,12 +4,7 @@ from langgraph.types import interrupt
 from langgraph.checkpoint.memory import MemorySaver
 
 # solver から関数をインポート
-import os
-# SOLVER=cpsat のとき、本物のCP-SAT(人数・日数を設定できる版)を使う(既定は今までどおり)
-if os.getenv("SOLVER", "mock") == "cpsat":
-    from covershift_prototype_V4_celery_redis.solver.real_solver import solve_shift_optimization
-else:
-    from covershift_prototype_V4_celery_redis.solver.main_solver import solve_shift_optimization
+from covershift_prototype_V4_celery_redis.solver.main_solver import solve_shift_optimization
 
 class ShiftState(TypedDict):
     thread_id: str
