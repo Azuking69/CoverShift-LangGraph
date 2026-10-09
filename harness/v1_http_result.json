@@ -1,0 +1,92 @@
+{
+ "env": {
+  "os": "Windows-11-10.0.26200-SP0",
+  "python": "3.13.11",
+  "cpu_count": 12,
+  "v1_root": "C:\\Users\\User\\Programming\\LangGraph",
+  "ortools": "9.15.6755"
+ },
+ "cases": {
+  "mock(ダミー)": {
+   "start_sec": {
+    "n": 10,
+    "min": 0.009,
+    "median": 0.024,
+    "max": 0.037
+   },
+   "resume_sec": {
+    "n": 10,
+    "min": 0.007,
+    "median": 0.022,
+    "max": 0.034
+   },
+   "http_codes_ok": true,
+   "last": [
+    200,
+    200,
+    "PAUSED_FOR_APPROVAL",
+    "COMPLETED"
+   ],
+   "draft_example": "10/02(金) Aさん: 早番, Bさん: 遅番",
+   "GET_during": {
+    "n": 14,
+    "max_sec": 0.031,
+    "failed": 0
+   }
+  },
+  "cpsat 5人x7日": {
+   "start_sec": {
+    "n": 10,
+    "min": 0.029,
+    "median": 0.039,
+    "max": 0.113
+   },
+   "resume_sec": {
+    "n": 10,
+    "min": 0.013,
+    "median": 0.031,
+    "max": 0.035
+   },
+   "http_codes_ok": true,
+   "last": [
+    200,
+    200,
+    "PAUSED_FOR_APPROVAL",
+    "COMPLETED"
+   ],
+   "draft_example": "[OPTIMAL] day1 早番:スタッフ4 遅番:スタッフ1,スタッフ2,スタッフ3",
+   "GET_during": {
+    "n": 23,
+    "max_sec": 0.028,
+    "failed": 0
+   }
+  },
+  "cpsat 20人x30日": {
+   "start_sec": {
+    "n": 10,
+    "min": 0.15,
+    "median": 0.206,
+    "max": 0.252
+   },
+   "resume_sec": {
+    "n": 10,
+    "min": 0.01,
+    "median": 0.026,
+    "max": 0.038
+   },
+   "http_codes_ok": true,
+   "last": [
+    200,
+    200,
+    "PAUSED_FOR_APPROVAL",
+    "COMPLETED"
+   ],
+   "draft_example": "[OPTIMAL] day1 早番:スタッフ3,スタッフ4,スタッフ6,スタッフ7 遅番:スタッフ1,スタッフ2,スタッ",
+   "GET_during": {
+    "n": 61,
+    "max_sec": 0.057,
+    "failed": 0
+   }
+  }
+ }
+}

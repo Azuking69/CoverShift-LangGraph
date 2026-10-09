@@ -1,4 +1,4 @@
-"""
+﻿"""
 E4: 同時に二重送信(二重の start・二重の resume)
 
 10組の店について、同じ依頼を「同時に2回」送り、返事(HTTPコード)の組を数える。
@@ -40,7 +40,7 @@ def main():
             codes = sorted(r.status_code for r in race(lambda: requests.post(f"{base}/api/v1/shift/start", json=body)))
             ds[str(codes)] += 1
         print("二重 start の返事の組:", dict(ds))
-        time.sleep(4)
+        time.sleep(15)
         tids = [f"e4-{stamp}-{i}-2026-10" for i in range(T)]
         paused = sum(1 for t in tids if run_status(base, t) == "PAUSED_FOR_APPROVAL")
         dr = collections.Counter()

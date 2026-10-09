@@ -7,7 +7,12 @@ from langgraph.graph import StateGraph, END
 from langgraph.types import interrupt
 from langgraph.checkpoint.memory import MemorySaver
 from covershift_prototype.schemas import CoverShiftState
-from covershift_prototype.solver.mock_solver import generate_shift_schedule
+import os
+# SOLVER=cpsat のとき、本物のCP-SATを使う(既定は今までどおりダミー)
+if os.getenv("SOLVER", "mock") == "cpsat":
+    from covershift_prototype.solver.real_solver import generate_shift_schedule
+else:
+    from covershift_prototype.solver.mock_solver import generate_shift_schedule
 
 # S1: ソルバーでシフト計算
 def node_solver(state: CoverShiftState) -> dict:

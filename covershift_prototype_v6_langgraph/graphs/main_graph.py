@@ -11,7 +11,12 @@ from langgraph.types import interrupt
 
 from ..config import MAX_REJECTS
 from ..schemas import CoverShiftState
-from ..solver.mock_solver import generate_shift_schedule
+import os
+# SOLVER=cpsat のとき、本物のCP-SATを使う(既定は今までどおりダミー)
+if os.getenv("SOLVER", "mock") == "cpsat":
+    from ..solver.real_solver import generate_shift_schedule
+else:
+    from ..solver.mock_solver import generate_shift_schedule
 
 
 def node_solver(state: CoverShiftState) -> dict:

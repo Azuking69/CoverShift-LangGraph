@@ -1,6 +1,6 @@
 [WORKER] ワーカー起動(V6: LangGraph + PostgresSaver)。未処理ジョブのチェック中...
 📡 [LISTEN開始/再接続]
 
-⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 124
-[WORKER] ジョブ検知・処理開始: Job ID=124, Kind=resume, Thread=e8-1791462212-2026-10, 試行=1
-[WORKER] ジョブ完了: Job ID=124
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 72
+[WORKER] ジョブ検知・処理開始: Job ID=72, Kind=resume, Thread=e8-1791532670-2026-10, 試行=1
+[WORKER] ジョブ完了: Job ID=72

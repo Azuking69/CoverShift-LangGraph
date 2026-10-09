@@ -1,10 +1,10 @@
  
  -------------- celery@아즈짱 v5.6.3 (recovery)
 --- ***** ----- 
--- ******* ---- Windows-11-10.0.26200-SP0 2026-10-08 21:45:58
+-- ******* ---- Windows-11-10.0.26200-SP0 2026-10-09 16:59:16
 - *** --- * --- 
 - ** ---------- [config]
-- ** ---------- .> app:         covershift_v4:0x23630514ad0
+- ** ---------- .> app:         covershift_v4:0x23c1c9c4ad0
 - ** ---------- .> transport:   redis://localhost:6379/0
 - ** ---------- .> results:     redis://localhost:6379/0
 - *** --- * --- .> concurrency: 12 (solo)
@@ -18,16 +18,16 @@
   . tasks.process_shift_job
   . tasks.resume_shift_job
 
-[2026-10-08 21:45:58,274: INFO/MainProcess] Connected to redis://localhost:6379/0
-[2026-10-08 21:45:58,296: INFO/MainProcess] mingle: searching for neighbors
-[2026-10-08 21:45:59,408: INFO/MainProcess] mingle: all alone
-[2026-10-08 21:45:59,532: INFO/MainProcess] celery@아즈짱 ready.
-[2026-10-08 21:46:05,137: INFO/MainProcess] Task tasks.process_shift_job[d369db24-9d37-4582-a456-86dcdca52fd4] received
-[2026-10-08 21:46:05,138: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=d369db24-9d37-4582-a456-86dcdca52fd4, Thread ID=bpre
-[2026-10-08 21:46:05,150: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bpre)
-[2026-10-08 21:46:05,215: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
-[2026-10-08 21:46:05,233: INFO/MainProcess] Task tasks.process_shift_job[d369db24-9d37-4582-a456-86dcdca52fd4] succeeded in 0.09537349999300204s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bpre', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'Alice': [...], 'Bob': [...], 'Charlie': [...], 'David': [...]}, 'assigned_total': 14}}
-[2026-10-08 21:46:05,752: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+[2026-10-09 16:59:16,564: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-09 16:59:16,599: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-09 16:59:17,684: INFO/MainProcess] mingle: all alone
+[2026-10-09 16:59:17,837: INFO/MainProcess] celery@아즈짱 ready.
+[2026-10-09 16:59:23,766: INFO/MainProcess] Task tasks.process_shift_job[292342e1-af62-40a0-a27e-0da7069f8348] received
+[2026-10-09 16:59:23,767: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=292342e1-af62-40a0-a27e-0da7069f8348, Thread ID=bpre
+[2026-10-09 16:59:23,773: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bpre)
+[2026-10-09 16:59:23,821: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
+[2026-10-09 16:59:23,847: INFO/MainProcess] Task tasks.process_shift_job[292342e1-af62-40a0-a27e-0da7069f8348] succeeded in 0.08014039999943634s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bpre', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'スタッフ0': [...], 'スタッフ1': [...], 'スタッフ2': [...], 'スタッフ3': [...], 'スタッフ4': [...], 'スタッフ5': [...], 'スタッフ6': [...], 'スタッフ7': [...], 'スタッフ8': [...], 'スタッフ9': [...]}, 'assigned_total': 112}}
+[2026-10-09 16:59:24,640: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
 Traceback (most recent call last):
   File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\retry.py", line 120, in call_with_retry
     return do()
@@ -163,7 +163,7 @@ Traceback (most recent call last):
   File "C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\redis\_parsers\socket.py", line 67, in _read_from_socket
     raise ConnectionError(SERVER_CLOSED_CONNECTION_ERROR)
 redis.exceptions.ConnectionError: Connection closed by server.
-[2026-10-08 21:46:10,179: WARNING/MainProcess] C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\consumer\consumer.py:397: CPendingDeprecationWarning: 
+[2026-10-09 16:59:25,128: WARNING/MainProcess] C:\Users\User\Programming\LangGraph\venv\Lib\site-packages\celery\worker\consumer\consumer.py:397: CPendingDeprecationWarning: 
 In Celery 5.1 we introduced an optional breaking change which
 on connection loss cancels all currently executed tasks with late acknowledgement enabled.
 These tasks cannot be acknowledged as the connection is gone, and the tasks are automatically redelivered
@@ -172,11 +172,11 @@ setting. In Celery 5.1 it is set to False by default. The setting will be set to
 
   warnings.warn(CANCEL_TASKS_BY_DEFAULT, CPendingDeprecationWarning)
 
-[2026-10-08 21:46:28,594: INFO/MainProcess] Connected to redis://localhost:6379/0
-[2026-10-08 21:46:28,617: INFO/MainProcess] mingle: searching for neighbors
-[2026-10-08 21:46:29,699: INFO/MainProcess] mingle: all alone
-[2026-10-08 21:46:29,804: INFO/MainProcess] Task tasks.process_shift_job[9d5085f6-cfff-4f23-a45a-8ceabd739f26] received
-[2026-10-08 21:46:29,805: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=9d5085f6-cfff-4f23-a45a-8ceabd739f26, Thread ID=bafter1791463588
-[2026-10-08 21:46:29,810: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bafter1791463588)
-[2026-10-08 21:46:29,833: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
-[2026-10-08 21:46:29,870: INFO/MainProcess] Task tasks.process_shift_job[9d5085f6-cfff-4f23-a45a-8ceabd739f26] succeeded in 0.06499910001002718s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bafter1791463588', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'Alice': [...], 'Bob': [...], 'Charlie': [...], 'David': [...]}, 'assigned_total': 14}}
+[2026-10-09 16:59:52,033: INFO/MainProcess] Connected to redis://localhost:6379/0
+[2026-10-09 16:59:52,074: INFO/MainProcess] mingle: searching for neighbors
+[2026-10-09 16:59:53,153: INFO/MainProcess] mingle: all alone
+[2026-10-09 16:59:53,239: INFO/MainProcess] Task tasks.process_shift_job[d20be696-f785-4d0c-8484-c1921ef062f5] received
+[2026-10-09 16:59:53,240: WARNING/MainProcess] 🚀 [Celery Worker] タスク受領: Task ID=d20be696-f785-4d0c-8484-c1921ef062f5, Thread ID=bafter1791532790
+[2026-10-09 16:59:53,244: WARNING/MainProcess] 📊 [LangGraph] CP-SAT最適化計算開始 (Thread=bafter1791532790)
+[2026-10-09 16:59:53,272: WARNING/MainProcess] ⏸️ [LangGraph] 店長承認待ち (HITL Interrupt) で停止中...
+[2026-10-09 16:59:53,283: INFO/MainProcess] Task tasks.process_shift_job[d20be696-f785-4d0c-8484-c1921ef062f5] succeeded in 0.043788700000732206s: {'status': 'PAUSED_FOR_APPROVAL', 'thread_id': 'bafter1791532790', 'shift_plan': {'status': 'OPTIMAL', 'schedule': {'スタッフ0': [...], 'スタッフ1': [...], 'スタッフ2': [...], 'スタッフ3': [...], 'スタッフ4': [...], 'スタッフ5': [...], 'スタッフ6': [...], 'スタッフ7': [...], 'スタッフ8': [...], 'スタッフ9': [...]}, 'assigned_total': 112}}

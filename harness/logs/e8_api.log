@@ -1,15 +1,14 @@
-INFO:     Started server process [22516]
+INFO:     Started server process [14436]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8096 (Press CTRL+C to quit)
-INFO:     127.0.0.1:63592 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58260 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:58263 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58268 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:58273 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62001 - "POST /api/v1/shift/resume HTTP/1.1" 202 Accepted
-INFO:     127.0.0.1:62005 - "POST /api/v1/shift/resume HTTP/1.1" 409 Conflict
-INFO:     127.0.0.1:62011 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62013 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62018 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62020 - "GET /api/v1/shift/e8-1791462212-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56719 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56737 - "POST /api/v1/shift/start HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56740 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56744 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56748 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56755 - "POST /api/v1/shift/resume HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:56759 - "POST /api/v1/shift/resume HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:56764 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56767 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56770 - "GET /api/v1/shift/e8-1791532670-2026-10 HTTP/1.1" 200 OK

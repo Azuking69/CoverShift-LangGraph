@@ -3,7 +3,7 @@
     "A1_安全な停止(stop→start)": {
       "queue_before": 3,
       "queue_after": 3,
-      "redis_back_sec": 0.1
+      "redis_back_sec": 0.0
     },
     "A2_突然死(kill→start)": {
       "queue_before": 3,
@@ -24,17 +24,17 @@
   "B": {
     "post_during_outage": {
       "http": 500,
-      "sec": 18.2,
+      "sec": 21.4,
       "task_id": null
     },
     "redis_back_sec": 0.0,
     "post_accepted_after": {
       "http": 202,
       "sec": 0.1,
-      "task_id": "9d5085f6-cfff-4f23-a45a-8ceabd739f26"
+      "task_id": "d20be696-f785-4d0c-8484-c1921ef062f5"
     },
-    "task_done_after_restore_sec": 1.4,
-    "sec_from_restore_to_task_done": 2.7,
+    "task_done_after_restore_sec": 2.8,
+    "sec_from_restore_to_task_done": 3.9,
     "worker_alive": true,
     "log_has_connection_lost": true
   },
