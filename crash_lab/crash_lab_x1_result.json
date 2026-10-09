@@ -1,0 +1,174 @@
+{
+ "pkg": "covershift_prototype_v6_langgraph",
+ "results": [
+  {
+   "label": "C0",
+   "crash_kind": "",
+   "approve": false,
+   "thread": "x1C0-202610",
+   "run_before_w2": {
+    "status": "RUNNING",
+    "current_status": "S4_説明生成完了",
+    "error": null
+   },
+   "run_after": {
+    "status": "PAUSED_FOR_APPROVAL",
+    "current_status": "S4_説明生成完了",
+    "error": null
+   },
+   "jobs_after": [
+    {
+     "id": 1,
+     "kind": "start",
+     "status": "done",
+     "attempts": 1
+    },
+    {
+     "id": 2,
+     "kind": "resume",
+     "status": "done",
+     "attempts": 1
+    }
+   ],
+   "solver_runs": 2,
+   "resume_answers": [
+    false
+   ],
+   "crashes": 0,
+   "handle_errors": 0,
+   "settled": true,
+   "graph_state": {
+    "retry_count": 1,
+    "manager_approved": false,
+    "status": "S4_説明生成完了",
+    "next": [
+     "manager_review"
+    ]
+   }
+  },
+  {
+   "label": "A",
+   "crash_kind": "start",
+   "approve": null,
+   "thread": "x1A-202610",
+   "run_before_w2": {
+    "status": "RUNNING",
+    "current_status": null,
+    "error": null
+   },
+   "run_after": {
+    "status": "PAUSED_FOR_APPROVAL",
+    "current_status": "S4_説明生成完了",
+    "error": null
+   },
+   "jobs_after": [
+    {
+     "id": 1,
+     "kind": "start",
+     "status": "done",
+     "attempts": 2
+    }
+   ],
+   "solver_runs": 1,
+   "resume_answers": [],
+   "crashes": 1,
+   "handle_errors": 0,
+   "settled": true,
+   "graph_state": {
+    "retry_count": 0,
+    "manager_approved": null,
+    "status": "S4_説明生成完了",
+    "next": [
+     "manager_review"
+    ]
+   }
+  },
+  {
+   "label": "B",
+   "crash_kind": "resume",
+   "approve": true,
+   "thread": "x1B-202610",
+   "run_before_w2": {
+    "status": "RUNNING",
+    "current_status": "S4_説明生成完了",
+    "error": null
+   },
+   "run_after": {
+    "status": "COMPLETED",
+    "current_status": "S6_確定済み",
+    "error": null
+   },
+   "jobs_after": [
+    {
+     "id": 1,
+     "kind": "start",
+     "status": "done",
+     "attempts": 1
+    },
+    {
+     "id": 2,
+     "kind": "resume",
+     "status": "done",
+     "attempts": 2
+    }
+   ],
+   "solver_runs": 1,
+   "resume_answers": [
+    true
+   ],
+   "crashes": 1,
+   "handle_errors": 0,
+   "settled": true,
+   "graph_state": {
+    "retry_count": 0,
+    "manager_approved": true,
+    "status": "S6_確定済み",
+    "next": []
+   }
+  },
+  {
+   "label": "C",
+   "crash_kind": "resume",
+   "approve": false,
+   "thread": "x1C-202610",
+   "run_before_w2": {
+    "status": "RUNNING",
+    "current_status": "S4_説明生成完了",
+    "error": null
+   },
+   "run_after": {
+    "status": "REJECTED",
+    "current_status": "S5_確認完了",
+    "error": null
+   },
+   "jobs_after": [
+    {
+     "id": 1,
+     "kind": "start",
+     "status": "done",
+     "attempts": 1
+    },
+    {
+     "id": 2,
+     "kind": "resume",
+     "status": "done",
+     "attempts": 2
+    }
+   ],
+   "solver_runs": 2,
+   "resume_answers": [
+    false,
+    false
+   ],
+   "crashes": 1,
+   "handle_errors": 0,
+   "settled": true,
+   "graph_state": {
+    "retry_count": 2,
+    "manager_approved": false,
+    "status": "S5_確認完了",
+    "next": []
+   }
+  }
+ ]
+}
