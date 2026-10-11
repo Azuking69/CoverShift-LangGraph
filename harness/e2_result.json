@@ -3,20 +3,20 @@
   "n_requested": 50,
   "client_based": {
     "n": 50,
-    "min_ms": -71,
-    "median_ms": 129,
-    "p95_ms": 687,
-    "max_ms": 900,
-    "mean_ms": 217,
+    "min_ms": 40,
+    "median_ms": 103,
+    "p95_ms": 657,
+    "max_ms": 954,
+    "mean_ms": 233,
     "missing": 0
   },
   "db_clock_only": {
     "n": 50,
-    "min_ms": 22,
-    "median_ms": 102,
-    "p95_ms": 600,
-    "max_ms": 731,
-    "mean_ms": 214
+    "min_ms": 9,
+    "median_ms": 57,
+    "p95_ms": 617,
+    "max_ms": 910,
+    "mean_ms": 192
   },
-  "clock_offset_ms": 79.1
+  "clock_offset_ms": -2.6
 }

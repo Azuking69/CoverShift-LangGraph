@@ -1,16 +1,14 @@
-{"t": 1791543075.8501909, "who": "x2F_w2", "pid": 4348, "ev": "worker_up", "thread": null, "kind": null, "job": null, "attempt": null}
-{"t": 1791543075.8628848, "who": "x2F_w1", "pid": 16680, "ev": "worker_up", "thread": null, "kind": null, "job": null, "attempt": null}
-{"t": 1791543077.139483, "who": "x2F_w2", "pid": 4348, "ev": "handle_begin", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
-{"t": 1791543077.2051773, "who": "x2F_w2", "pid": 4348, "ev": "solver_begin", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
-{"t": 1791543081.2068772, "who": "x2F_w2", "pid": 4348, "ev": "solver_end", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
-{"t": 1791543081.5453322, "who": "x2F_w2", "pid": 4348, "ev": "handle_end", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
-{"t": 1791543083.0352407, "who": "x2F_w2", "pid": 4348, "ev": "handle_begin", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
-{"t": 1791543083.1066654, "who": "x2F_w1", "pid": 16680, "ev": "handle_begin", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
-{"t": 1791543083.1171927, "who": "x2F_w2", "pid": 4348, "ev": "resume_answer", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1, "answer": false}
-{"t": 1791543083.129499, "who": "x2F_w2", "pid": 4348, "ev": "solver_begin", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
-{"t": 1791543083.150788, "who": "x2F_w1", "pid": 16680, "ev": "resume_answer", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1, "answer": false}
-{"t": 1791543083.1625693, "who": "x2F_w1", "pid": 16680, "ev": "solver_begin", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
-{"t": 1791543087.1308637, "who": "x2F_w2", "pid": 4348, "ev": "solver_end", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
-{"t": 1791543087.1635, "who": "x2F_w1", "pid": 16680, "ev": "solver_end", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
-{"t": 1791543087.470868, "who": "x2F_w2", "pid": 4348, "ev": "handle_end", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
-{"t": 1791543087.5003717, "who": "x2F_w1", "pid": 16680, "ev": "handle_end", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
+{"t": 1791547719.8264692, "who": "x2F_w2", "pid": 14332, "ev": "worker_up", "thread": null, "kind": null, "job": null, "attempt": null}
+{"t": 1791547719.8265872, "who": "x2F_w1", "pid": 13024, "ev": "worker_up", "thread": null, "kind": null, "job": null, "attempt": null}
+{"t": 1791547721.492594, "who": "x2F_w2", "pid": 14332, "ev": "handle_begin", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
+{"t": 1791547721.5731068, "who": "x2F_w2", "pid": 14332, "ev": "solver_begin", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
+{"t": 1791547725.5752742, "who": "x2F_w2", "pid": 14332, "ev": "solver_end", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
+{"t": 1791547725.8884003, "who": "x2F_w2", "pid": 14332, "ev": "handle_end", "thread": "x2F-202610", "kind": "start", "job": 1, "attempt": 1}
+{"t": 1791547727.1951652, "who": "x2F_w1", "pid": 13024, "ev": "handle_begin", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
+{"t": 1791547727.2803307, "who": "x2F_w1", "pid": 13024, "ev": "resume_answer", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1, "answer": false}
+{"t": 1791547727.2905009, "who": "x2F_w1", "pid": 13024, "ev": "solver_begin", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
+{"t": 1791547731.2914455, "who": "x2F_w1", "pid": 13024, "ev": "solver_end", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
+{"t": 1791547731.6369455, "who": "x2F_w1", "pid": 13024, "ev": "handle_end", "thread": "x2F-202610", "kind": "resume", "job": 2, "attempt": 1}
+{"t": 1791547731.7271812, "who": "x2F_w1", "pid": 13024, "ev": "handle_begin", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
+{"t": 1791547731.813425, "who": "x2F_w1", "pid": 13024, "ev": "resume_answer", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1, "answer": false}
+{"t": 1791547732.0208466, "who": "x2F_w1", "pid": 13024, "ev": "handle_end", "thread": "x2F-202610", "kind": "resume", "job": 3, "attempt": 1}
