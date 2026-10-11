@@ -8,7 +8,5 @@ C:\Users\User\Programming\LangGraph\crash_lab\lab_worker.py:6: SyntaxWarning: in
 [WORKER] ジョブ完了: Job ID=1
 
 ⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 2
-[WORKER] ジョブ検知・処理開始: Job ID=3, Kind=resume, Thread=x2F-202610, 試行=1
-[WORKER] ジョブ完了: Job ID=3
 
 ⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 3

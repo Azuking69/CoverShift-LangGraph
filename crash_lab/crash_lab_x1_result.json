@@ -1,5 +1,5 @@
 {
- "pkg": "covershift_prototype_v6_langgraph",
+ "pkg": "covershift_prototype_v6_min",
  "results": [
   {
    "label": "C0",
@@ -137,8 +137,8 @@
     "error": null
    },
    "run_after": {
-    "status": "REJECTED",
-    "current_status": "S5_確認完了",
+    "status": "PAUSED_FOR_APPROVAL",
+    "current_status": "S4_説明生成完了",
     "error": null
    },
    "jobs_after": [
@@ -157,17 +157,18 @@
    ],
    "solver_runs": 2,
    "resume_answers": [
-    false,
     false
    ],
    "crashes": 1,
    "handle_errors": 0,
    "settled": true,
    "graph_state": {
-    "retry_count": 2,
+    "retry_count": 1,
     "manager_approved": false,
-    "status": "S5_確認完了",
-    "next": []
+    "status": "S4_説明生成完了",
+    "next": [
+     "manager_review"
+    ]
    }
   }
  ]
