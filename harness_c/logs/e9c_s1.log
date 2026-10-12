@@ -1,0 +1,4 @@
+21:17:30 [ソルバー] 起動 pid2156
+21:17:33 ジョブ検知・処理開始 e9c-1791721053-2026-10 seq=1 受信回数=1
+21:18:19 [ソルバー] エラー(メッセージは消さずに続けます): OperationalError consuming input failed: could not receive data from server: Software caused conn
+21:18:33 ジョブ検知・処理開始 e9c-1791721053-2026-10 seq=1 受信回数=3

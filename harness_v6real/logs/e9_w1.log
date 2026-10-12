@@ -1,0 +1,8 @@
+[WORKER] ワーカー起動(V6: LangGraph + PostgresSaver)。未処理ジョブのチェック中...
+📡 [LISTEN開始/再接続]
+
+⚡ [NOTIFY受信] チャンネル: job_created, Job ID: 2
+[WORKER] ジョブ検知・処理開始: Job ID=2, Kind=start, Thread=e9-1791722614-2026-10, 試行=1
+error ignored terminating <psycopg.Pipeline [BAD] at 0x2d227fd5220>: the connection is lost
+[WORKER] 世代が古いので引き下がります: job=2 自分の世代=1 / いまの世代=2
+📡 [LISTEN開始/再接続]

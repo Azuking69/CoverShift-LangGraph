@@ -1,0 +1,22 @@
+{
+  "db": "covershift_proto",
+  "n_requested": 50,
+  "client_based": {
+    "n": 50,
+    "min_ms": 23,
+    "median_ms": 176,
+    "p95_ms": 695,
+    "max_ms": 923,
+    "mean_ms": 266,
+    "missing": 0
+  },
+  "db_clock_only": {
+    "n": 50,
+    "min_ms": 16,
+    "median_ms": 139,
+    "p95_ms": 665,
+    "max_ms": 896,
+    "mean_ms": 232
+  },
+  "clock_offset_ms": -4.7
+}

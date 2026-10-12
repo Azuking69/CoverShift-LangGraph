@@ -1,0 +1,49 @@
+{
+  "system": "C-min",
+  "A_latency_after_short_outage_sec": [
+    0.3,
+    2.5,
+    2.6
+  ],
+  "B_post_during_down": {
+    "http": 500,
+    "sec": 10.1
+  },
+  "B_alive_after_45s": {
+    "e5_api": true,
+    "e5_relay": true,
+    "e5_flow": true,
+    "e5_solver": true
+  },
+  "B_latency_after_long_outage_sec": 2.5,
+  "B_alive_end": {
+    "e5_api": true,
+    "e5_relay": true,
+    "e5_flow": true,
+    "e5_solver": true
+  },
+  "C_queued_during_restart_processed_of_3": 3,
+  "D_post_during_queue_down": [
+    {
+      "http": 202,
+      "sec": 0.1
+    },
+    {
+      "http": 202,
+      "sec": 0.1
+    },
+    {
+      "http": 202,
+      "sec": 0.0
+    }
+  ],
+  "D_outbox_unsent_during_queue_down": 3,
+  "D_alive_during_queue_down": {
+    "e5_api": true,
+    "e5_relay": true,
+    "e5_flow": true,
+    "e5_solver": true
+  },
+  "D_processed_of_3": 3,
+  "D_seconds_after_queue_back": 0.1
+}

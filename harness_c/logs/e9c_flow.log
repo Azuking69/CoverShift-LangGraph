@@ -1,0 +1,5 @@
+21:17:30 [フロー] 起動
+21:17:33 イベント処理開始 start e9c-1791721053-2026-10
+21:18:49 イベント処理開始 draft_done e9c-1791721053-2026-10
+21:18:49 [フロー] エラー(メッセージは消さずに続けます): OperationalError consuming input failed: could not receive data from server: Software caused conn
+21:18:50 イベント処理開始 draft_done e9c-1791721053-2026-10

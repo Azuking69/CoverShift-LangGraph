@@ -1,0 +1,3 @@
+[WORKER] ワーカー起動(V6: LangGraph + PostgresSaver)。未処理ジョブのチェック中...
+📡 [LISTEN開始/再接続]
+[WORKER] ジョブ検知・処理開始: Job ID=1, Kind=start, Thread=e3-1791713029-2026-10, 試行=1
