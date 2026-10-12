@@ -1,0 +1,10 @@
+21:17:31 [リレー] 起動
+21:17:31 [リレー] DBにつなぎました(合図待ち)
+21:17:33 [リレー] 1件をキューへ移しました
+21:17:33 [リレー] 1件をキューへ移しました
+21:17:39 [リレー] エラー(つなぎ直します): OperationalError consuming input failed: server closed the connection unexpectedly
+	This probably
+21:17:45 [リレー] エラー(つなぎ直します): ConnectionTimeout connection timeout expired
+Multiple connection attempts failed. All failures wer
+21:17:46 [リレー] DBにつなぎました(合図待ち)
+21:18:49 [リレー] 1件をキューへ移しました

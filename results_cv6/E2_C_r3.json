@@ -1,0 +1,32 @@
+{
+  "system": "C-min",
+  "db": "covershift_proto",
+  "n_requested": 50,
+  "client_based": {
+    "n": 50,
+    "min_ms": 84,
+    "median_ms": 116,
+    "p95_ms": 130,
+    "max_ms": 148,
+    "mean_ms": 116,
+    "missing": 0
+  },
+  "db_clock_only": {
+    "n": 50,
+    "min_ms": 63,
+    "median_ms": 73,
+    "p95_ms": 79,
+    "max_ms": 110,
+    "mean_ms": 74
+  },
+  "clock_offset_ms": -1.3,
+  "reference_until_paused": {
+    "n": 50,
+    "min_ms": 232,
+    "median_ms": 270,
+    "p95_ms": 291,
+    "max_ms": 341,
+    "mean_ms": 271,
+    "missing": 0
+  }
+}

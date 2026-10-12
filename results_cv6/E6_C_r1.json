@@ -1,0 +1,20 @@
+{
+  "system": "C-min",
+  "jobs": 20,
+  "seconds_for_starts": 22.3,
+  "paused": 20,
+  "max_receive_count": 1,
+  "duplicate_solves": 0,
+  "jobs_per_solver": {
+    "e6_s1": 10,
+    "e6_s2": 10
+  },
+  "events_per_flow": {
+    "e6_f1": 19,
+    "e6_f2": 21
+  },
+  "resume_http": {
+    "202": 20
+  },
+  "completed_after_resume": 20
+}

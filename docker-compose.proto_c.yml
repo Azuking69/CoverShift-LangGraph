@@ -1,0 +1,20 @@
+# C案(最小版)の試験用: PostgreSQL(V6の試験用と同じ設定) + ElasticMQ(SQS互換の代用品)
+# DB: localhost:5434 / キュー: localhost:9324 (SQS API) ・ 9325 (確認用の画面)
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: covershift
+      POSTGRES_PASSWORD: covershift
+      POSTGRES_DB: covershift_proto
+    ports:
+      - "5434:5432"
+    volumes:
+      - proto_pgdata:/var/lib/postgresql/data
+  elasticmq:
+    image: softwaremill/elasticmq-native
+    ports:
+      - "9324:9324"
+      - "9325:9325"
+volumes:
+  proto_pgdata:

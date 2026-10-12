@@ -1,0 +1,22 @@
+{
+  "system": "C-min",
+  "sleep_sec": "8",
+  "timeout_sec": "10",
+  "passed": true,
+  "thread_id": "e3-1791713076-2026-10",
+  "seconds_after_restart": 17.0,
+  "final_status": "PAUSED_FOR_APPROVAL",
+  "solver_log": [
+    [
+      1,
+      1,
+      "pid12888"
+    ],
+    [
+      1,
+      2,
+      "pid14732"
+    ]
+  ],
+  "max_receive_count": 2
+}
