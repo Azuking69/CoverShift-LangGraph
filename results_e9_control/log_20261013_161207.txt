@@ -1,0 +1,84 @@
+﻿**********************
+Windows PowerShell 기록 시작
+시작 시간: 20261013161207
+사용자 이름: 아즈짱\User
+RunAs 사용자: 아즈짱\User
+구성 이름: 
+Machine: 아즈짱 (Microsoft Windows NT 10.0.26200.0)
+호스트 응용 프로그램: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -File .\run_e9_control.ps1 -Rounds 3 -WithStop
+프로세스 ID: 20488
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+=== E9 C / control / round 1  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / result rows = 1 / finished at 40.5 s
+
+=== E9 C / stop / round 1  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 3 / result rows = 1 / finished at 72.0 s
+
+=== E9 V6 / control / round 1  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 1 / finished at 41.4 s / final PAUSED_FOR_APPROVAL
+
+=== E9 V6 / stop / round 1  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / finished at 73.6 s / final PAUSED_FOR_APPROVAL
+
+=== E9 C / control / round 2  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / result rows = 1 / finished at 40.4 s
+
+=== E9 C / stop / round 2  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 3 / result rows = 1 / finished at 71.9 s
+
+=== E9 V6 / control / round 2  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 1 / finished at 41.6 s / final PAUSED_FOR_APPROVAL
+
+=== E9 V6 / stop / round 2  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / finished at 74.2 s / final PAUSED_FOR_APPROVAL
+
+=== E9 C / control / round 3  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / result rows = 1 / finished at 40.3 s
+
+=== E9 C / stop / round 3  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 3 / result rows = 1 / finished at 71.3 s
+
+=== E9 V6 / control / round 3  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 1 / finished at 41.5 s / final PAUSED_FOR_APPROVAL
+
+=== E9 V6 / stop / round 3  (compute 45s, deadline 30s) ===
+Waiting 15 s for DB (and queue) to initialize...
+
+>>> RESULT: compute starts = 2 / finished at  s / final RUNNING
+
+Done. Results are in results_e9_control. Original E9 results were restored (backup copies kept).
+**********************
+Windows PowerShell 기록 끝
+종료 시간: 20261013173334
+**********************
