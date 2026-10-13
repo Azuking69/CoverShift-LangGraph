@@ -1,0 +1,50 @@
+{
+  "EXP_SLEEP": "45",
+  "JOB_TIMEOUT_SEC": "30",
+  "worker1_starts(JobID,試行)": [
+    [
+      "1",
+      "1"
+    ]
+  ],
+  "worker2_starts(JobID,試行)": [],
+  "finished_at_sec_after_db_stop": 41.5,
+  "final": {
+    "job": "done",
+    "attempts": 1,
+    "advisory_locks": 0,
+    "t": 41.5,
+    "run_status": "PAUSED_FOR_APPROVAL"
+  },
+  "同じ仕事の処理開始が2回以上": false,
+  "世代が古くて引き下がった回数(w1,w2)": [
+    0,
+    0
+  ],
+  "worker1_alive": true,
+  "worker2_alive": true,
+  "checkpoint_rows": 4,
+  "timeline_changes": [
+    {
+      "job": "RUNNING",
+      "attempts": 1,
+      "advisory_locks": 1,
+      "t": 3.2,
+      "run_status": "RUNNING"
+    },
+    {
+      "job": "RUNNING",
+      "attempts": 1,
+      "advisory_locks": 1,
+      "t": 40.4,
+      "run_status": "PAUSED_FOR_APPROVAL"
+    },
+    {
+      "job": "done",
+      "attempts": 1,
+      "advisory_locks": 0,
+      "t": 41.5,
+      "run_status": "PAUSED_FOR_APPROVAL"
+    }
+  ]
+}

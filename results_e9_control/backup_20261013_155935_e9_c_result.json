@@ -1,0 +1,58 @@
+{
+  "system": "C-min",
+  "EXP_SLEEP": "45",
+  "VISIBILITY_TIMEOUT_SEC": "30",
+  "thread_id": "e9c-1791874293-2026-10",
+  "finished_at_sec_after_db_stop": 71.7,
+  "solver_log": [
+    [
+      1,
+      1,
+      "pid27840"
+    ],
+    [
+      1,
+      2,
+      "pid12828"
+    ],
+    [
+      1,
+      3,
+      "pid27840"
+    ]
+  ],
+  "solver_results_rows": 1,
+  "同じ仕事の計算開始が2回以上": true,
+  "timeline_changes": [
+    {
+      "t": 5.5,
+      "solver_log_rows": 1,
+      "results_rows": 0,
+      "run_status": "SOLVING"
+    },
+    {
+      "t": 25.7,
+      "solver_log_rows": 2,
+      "results_rows": 0,
+      "run_status": "SOLVING"
+    },
+    {
+      "t": 56.1,
+      "solver_log_rows": 3,
+      "results_rows": 0,
+      "run_status": "SOLVING"
+    },
+    {
+      "t": 70.7,
+      "solver_log_rows": 3,
+      "results_rows": 1,
+      "run_status": "SOLVING"
+    },
+    {
+      "t": 71.7,
+      "solver_log_rows": 3,
+      "results_rows": 1,
+      "run_status": "PAUSED_FOR_APPROVAL"
+    }
+  ]
+}
